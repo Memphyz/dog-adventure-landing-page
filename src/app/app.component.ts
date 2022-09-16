@@ -1,3 +1,4 @@
+import { Navigation, navigation } from './navigation';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dog-adventure-landing-page';
+  public navigations: Navigation[] = navigation;
 }

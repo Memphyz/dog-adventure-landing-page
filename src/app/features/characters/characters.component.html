@@ -1,0 +1,11 @@
+<ng-container *ngFor="let card of data">
+  <div class="card">
+    <div class="infos">
+      <div class="image"
+        style="background-image: url(./../../../assets/images/{{card.icon}}.png);"></div>
+      <h3>{{card.name}}</h3>
+    </div>
+    <div class="data"
+      [innerHTML]="card.desc"></div>
+  </div>
+</ng-container>

@@ -2,6 +2,7 @@ html,
 body {
   padding: 0px;
   margin: 0px;
+  overflow: hidden;
 }
 
 @font-face {
@@ -14,6 +15,12 @@ body {
   box-sizing: border-box;
   scrollbar-width: thin;
   scrollbar-color: #c4c4c4 #ffffff;
+
+  &::selection {
+    background-color: #e305a1c9;
+    transition: all 0.5s;
+    color: white;
+  }
 }
 
 *::-webkit-scrollbar {
@@ -31,7 +38,7 @@ body {
 }
 
 body {
-  background-image: url(./assets/images/background-atmosphere.jpg);
+  background-image: linear-gradient(112.7deg, #5d01fb 1.37%, #e305a1c9 98.36%);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #02060e;
