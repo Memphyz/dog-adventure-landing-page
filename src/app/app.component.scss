@@ -33,12 +33,29 @@
       flex-direction: column;
       gap: 50px;
 
+      .close {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        -webkit-mask-image: url(./../assets/icons/close.svg);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        -webkit-mask-size: contain;
+        mask-image: url(./../assets/icons/close.svg);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: contain;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: none;
+      }
+
       @media screen and (max-width: 1200px) {
         width: 0px;
         min-width: unset !important;
 
         &.open {
-          min-width: 100% !important;
           position: fixed;
           top: 0%;
           z-index: 100;
@@ -47,6 +64,22 @@
             #5d01fb 1.37%,
             rgba(227, 5, 161, 0.7882352941) 98.36%
           );
+          animation: animation-sidenav 0.5s;
+          overflow: hidden;
+          width: 100%;
+
+          @keyframes animation-sidenav {
+            0% {
+              width: 0%;
+            }
+            100% {
+              width: 100%;
+            }
+          }
+
+          .close {
+            display: block;
+          }
         }
       }
       .itens {

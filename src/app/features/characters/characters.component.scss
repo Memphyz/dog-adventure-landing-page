@@ -111,4 +111,31 @@
       z-index: 1;
     }
   }
+
+  @media screen and (max-width: 598px) {
+    .card {
+      .infos {
+        flex-direction: column;
+
+        .image {
+          left: 0px;
+          top: 0px;
+          max-width: unset;
+          margin: 0 auto;
+          min-width: unset !important;
+          width: 100% !important;
+          background-color: transparent;
+          border: unset;
+        }
+
+        h3 {
+          left: 0px;
+          text-align: center;
+        }
+      }
+      .data {
+        text-align: center;
+      }
+    }
+  }
 }
