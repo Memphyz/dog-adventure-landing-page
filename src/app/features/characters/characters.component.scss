@@ -49,6 +49,7 @@
 
     .infos > .image {
       min-width: 200px !important;
+      min-height: 156px !important;
     }
   }
 
@@ -76,11 +77,9 @@
         height: -moz-fit-content;
         height: fit-content;
         position: relative;
-        border: 2px solid white;
-        border-radius: 5px;
         bottom: 30px;
         right: 35px;
-        background-color: white;
+        border-radius: 10px;
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;

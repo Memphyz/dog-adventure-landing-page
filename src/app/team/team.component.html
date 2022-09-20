@@ -1,1 +1,14 @@
-<p>team works!</p>
+<h1>Equipe Vortex</h1>
+
+<div class="members">
+  <div class="member"
+    *ngFor="let member of members">
+    <div class="member-info">
+      <div class="member-avatar"
+        style="mask-image: url(./../../assets/icons/{{member.icon}}.svg);-webkit-mask-image: url(./../../assets/icons/{{member.icon}}.png);">
+        &nbsp;</div>
+      <div class="member-name">{{member.name}}</div>
+    </div>
+    <div class="member-function"><span>Cargo: </span>{{member.function}}</div>
+  </div>
+</div>
