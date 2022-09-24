@@ -24,7 +24,7 @@
     display: flex;
 
     .container {
-      min-width: 180px;
+      min-width: 160px;
       height: 100vh;
         
       @media screen and (min-width: 1200px) {
@@ -172,7 +172,7 @@
         background-size: 63%;
         background-position: center 54%;
         background-color: white;
-        border: 2px solid #eb01a5;
+        border: 3px solid #eb01a5;
         box-shadow: 0px 0px 15px 0px black;
         flex-grow: 0;
         flex-shrink: 0;
@@ -183,6 +183,7 @@
     .content {
       height: calc(100vh - 60px);
       background-color: #5d01fb38;
+      background-image: linear-gradient(112.7deg, #5d01fb2c 1.37%, #e305a02c 98.36%),  url('../assets/images/noise.svg');
       backdrop-filter: blur(26px);
       border-radius: 15px;
       overflow: hidden;
@@ -212,7 +213,7 @@
 @keyframes shadow-drop-2-center {
   0% {
     transform: translateZ(0) ;
-    background-image: linear-gradient(112.7deg, #5d01fb00 1.37%, #e305a000 98.36%);
+    background-image: linear-gradient(112.7deg, #5d01fbc0 1.37%, #e305a0a4 98.36%);
 
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
