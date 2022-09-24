@@ -65,11 +65,14 @@
           position: fixed;
           top: 0%;
           z-index: 100;
-          background-image: linear-gradient(
+          /*background-image: linear-gradient(
             112.7deg,
             #5d01fb 1.37%,
             rgba(227, 5, 161, 0.7882352941) 98.36%
-          );
+          );*/
+          background-color: #36363638;
+          background-image: linear-gradient(112.7deg, #5d01fb2c 1.37%, #e305a02c 98.36%),  url('../assets/images/noise.svg');
+          backdrop-filter: blur(18px);
           animation: animation-sidenav 0.5s;
           overflow: hidden;
           width: 100%;
