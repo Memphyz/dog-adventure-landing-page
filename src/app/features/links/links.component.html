@@ -1,0 +1,9 @@
+<ng-container *ngFor="let link of items">
+  <div class="link"
+    (click)="window.open(link.link)">
+    <div class="link-image"
+      style="mask-image: url(./../../../assets/icons/{{link.icon}}.svg); -webkit-mask-image: url(./../../../assets/icons/{{link.icon}}.svg);">
+    </div>
+    <span>{{link.desc}}</span>
+  </div>
+</ng-container>
