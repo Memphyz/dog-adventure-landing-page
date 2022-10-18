@@ -34,7 +34,7 @@ export class LinksComponent {
     {
       title: 'Youtube',
       desc: 'Canal do projeto.',
-      link: 'https://github.com/ViniZap4/dog-adventure',
+      link: 'https://www.youtube.com/channel/UCvZFSOUdqKeCVwZQ7Bp34Xw',
       icon: 'youtube'
     },
     {
