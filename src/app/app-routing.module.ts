@@ -1,5 +1,5 @@
 import { CharactersComponent } from './features/characters/characters.component';
-import { HistoryComponent } from './features/history/history.component';
+import { LinksComponent } from './features/links/links.component';
 import { TeamComponent } from './team/team.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -19,8 +19,8 @@ const routes: Routes = [
     component: TeamComponent
   },
   {
-    path: 'history',
-    component: HistoryComponent
+    path: 'links',
+    component: LinksComponent
   }
 ];
 

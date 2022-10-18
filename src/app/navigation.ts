@@ -1,6 +1,6 @@
 export interface Navigation {
   title: string;
-  icon: 'history' | 'profile' | 'team';
+  icon: 'links' | 'profile' | 'team';
   routerLink: string[]
 }
 
@@ -11,9 +11,9 @@ export const navigation: Navigation[] = [
     routerLink: ['characters']
   },
   {
-    title: 'História',
-    icon: 'history',
-    routerLink: ['history']
+    title: 'Links',
+    icon: 'links',
+    routerLink: ['links']
   },
   {
     title: 'Time',

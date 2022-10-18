@@ -1,0 +1,22 @@
+import { LinksComponent } from './links.component';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+describe('HistoryComponent', () => {
+  let component: LinksComponent;
+  let fixture: ComponentFixture<LinksComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [LinksComponent]
+    })
+      .compileComponents();
+
+    fixture = TestBed.createComponent(LinksComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

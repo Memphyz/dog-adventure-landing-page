@@ -1,17 +1,16 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './features/characters/characters.component';
-import { HistoryComponent } from './features/history/history.component';
+import { LinksComponent } from './features/links/links.component';
 import { TeamComponent } from './team/team.component';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
     AppComponent,
     CharactersComponent,
-    HistoryComponent,
+    LinksComponent,
     TeamComponent
   ],
   imports: [
@@ -21,4 +20,4 @@ import { TeamComponent } from './team/team.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
