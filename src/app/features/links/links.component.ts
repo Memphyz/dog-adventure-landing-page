@@ -45,7 +45,7 @@ export class LinksComponent {
     },
     {
       title: 'Repositório',
-      desc: 'Repositõrio que contém as versões e código do jogo.',
+      desc: 'Repositório que contém as versões e código do jogo.',
       link: 'https://github.com/ViniZap4/dog-adventure ',
       icon: 'repo'
     }

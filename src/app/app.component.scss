@@ -26,7 +26,7 @@
     .container {
       min-width: 160px;
       height: 100vh;
-        
+
       @media screen and (min-width: 1200px) {
         overflow-x: visible;
       }
@@ -37,7 +37,7 @@
       flex-direction: column;
       gap: 50px;
       align-items: center;
-   
+
 
       .close {
         width: 30px;
@@ -73,6 +73,7 @@
           background-color: #36363638;
           background-image: linear-gradient(112.7deg, #5d01fb2c 1.37%, #e305a02c 98.36%),  url('../assets/images/noise.svg');
           backdrop-filter: blur(18px);
+          -webkit-backdrop-filter: blur(18px);
           animation: animation-sidenav 0.5s;
           overflow: hidden;
           width: 100%;
@@ -108,7 +109,7 @@
         @media screen and (min-width: 1200px) {
           animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
         }
-        
+
 
         overflow-x:visible;
         .item {
@@ -145,7 +146,7 @@
             }
           }
           &.active{
-            
+
             @media screen and (min-width: 1200px) {
               animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, wobble-ver-left 0.8s both;
               border-radius: 9px;
